@@ -1,0 +1,38 @@
+version: '3.3'
+services:
+
+  grafana:
+    image: grafana/grafana:5.4.0
+    restart: always
+    ports:
+      - 3000:3000
+    networks:
+      - default
+    volumes:
+      - ./grafana:/var/lib/grafana
+    container_name: grafana
+
+  collectd:
+    build:
+      dockerfile: ./collectd/Dockerfile-collectd
+      context: .
+    restart: always
+    networks:
+      - default
+    volumes:
+      - /proc:/mnt/proc:ro
+      - ./collectd/collectd.conf:/etc/collectd/collectd.conf
+    privileged: true
+    hostname: Collectd
+    container_name: collectd
+
+  graphite:
+    image: graphiteapp/graphite-statsd:1.1.4-10
+    restart: always
+    networks:
+      - default
+    ports:
+      - 8000:80
+    volumes:
+      - ./graphite:/opt/graphite/storage
+    container_name: graphite
