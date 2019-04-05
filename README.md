@@ -24,8 +24,10 @@ Hit, http://localhost:3000/login
 
 Login to grafana with **admin** & **admin** as username & password.
 
-That's it!
+That's it!!
 
 ## Screenshot
+
+This is how Grafana monitoring screen looks like after login.
 
 ![Monitoring Screen](https://user-images.githubusercontent.com/15060542/55627722-83576b00-57cc-11e9-8930-9f190f8c2c38.png)
