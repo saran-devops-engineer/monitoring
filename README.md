@@ -27,3 +27,5 @@ Login to grafana with **admin** & **admin** as username & password.
 That's it!
 
 ## Screenshot
+
+![Monitoring Screen](https://user-images.githubusercontent.com/15060542/55627722-83576b00-57cc-11e9-8930-9f190f8c2c38.png)
