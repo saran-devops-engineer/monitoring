@@ -24,7 +24,7 @@ Hit, http://localhost:3000/login
 
 Login to grafana with **admin** & **admin** as username & password.
 
-That's it!!
+That's it !!
 
 ## Screenshot
 
