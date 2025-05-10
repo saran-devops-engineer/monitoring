@@ -30,4 +30,7 @@ That's it !!
 
 This is how Grafana monitoring screen looks like after login.
 
+
+Note: If you don't have docker-compose in your machine use monitor.sh file, for that first build collectd image docker file is available in collectd directory and make sure all those directories are availbale in same directory.
+
 ![Monitoring Screen](https://user-images.githubusercontent.com/15060542/55627722-83576b00-57cc-11e9-8930-9f190f8c2c38.png)
